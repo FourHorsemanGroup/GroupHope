@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>saldo do cliente</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"> <!-- Importação do css do bootstrap -->
+  <link rel="stylesheet" type="text/css" href="assets/css/outronome.css"> <!-- Importação do css personalizado 'outronome' -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-image: url('assets/img/bike.png') ;     background-size: cover;
+background-repeat: no-repeat;
+"> <!-- Abertura do body com aplicação da imagem de fundo -->
+
+  <!-- Funções javascript para fazer o controle do quadro que vai aparecer quando clicar nos botões adicionar / remover e voltar -->
+  <script> 
+    //esta função é chamada pelo botão adicionar. ela esconde a div 'botoes' e apresenta a div 'valor'
+    function adicionarSaldo() {
+      document.getElementById("botoes").style.display = 'none';
+      document.getElementById("valor").style.display = 'block';
+    }
+
+    //esta função é chamada pelo botão remover. ela esconde a div 'botoes' e apresenta a div 'valor'
+    function removerSaldo() {
+      document.getElementById("botoes").style.display = 'none';
+      document.getElementById("valor").style.display = 'block';
+    }
+
+    //esta função é chamada pelo botão OK. ela esconde a div 'valor' e apresenta a div 'botoes'
+    function voltar() {
+      document.getElementById("botoes").style.display = 'block';
+      document.getElementById("valor").style.display = 'none';
+    }
+  </script>
+
+
+  <header> <!-- Abertura do header para inserir o navbar (menu) -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbarBike" id="navbarText">
+          <ul class="navbar-nav d-flex align-items-center me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="D:\ProjetosFaculdade\HTML-bicicletaria\produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="D:\ProjetosFaculdade\HTML-bicicletaria\Venda.html">Vender</a>
+            </li>
+  <li class="nav-item">
+    <a class="nav-link" href="D:\ProjetosFaculdade\HTML-bicicletaria\diagnostico.html">Tela Inicial</a>
+  </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="joao/super calendario power guido/Caslenndario.html">agenda</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="D:\ProjetosFaculdade\HTML-bicicletaria\index.html"><img class="logo"  src="assets/img/logo.jpeg" alt="Your Logo"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="D:\ProjetosFaculdade\HTML-bicicletaria\Funcionarios.html">historico</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="menuFornecedores" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Clientes
+              </a>
+              <div class="dropdown-menu" aria-labelledby="menuFornecedores">
+                  <a class="dropdown-item" href="D:\ProjetosFaculdade\HTML-bicicletaria\ClienteCadastro.html">Cadastrar Cliente</a>
+                  <a class="dropdown-item" href="Ana/site-bike/Saldao.html" disabled>Consulta clientes</a>
+                  
+              </div>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="D:\ProjetosFaculdade\HTML-bicicletaria\aluguelBike.html">AlugarBike</a>
+            </li>  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="menuFornecedores" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Fornecedores
+              </a>
+              <div class="dropdown-menu" aria-labelledby="menuFornecedores">
+                  <a class="dropdown-item" href="D:\ProjetosFaculdade\HTML-bicicletaria\Cadastro.html">Cadastrar Fornecedor</a>
+                  <a class="dropdown-item" href="cad-produto.html" disabled>Cadastro Produto</a>
+                  <a class="dropdown-item" href="localizacao.html">verificar localização das bicicleta</a>
+              </div>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="input-group mb-3 container text-center" style="padding-top: 10px;">
+    <input type="text" class="form-control form-control-lg" placeholder="Insira sua pesquisa aqui..." aria-label="Insira sua pesquisa aqui..." aria-describedby="btnPesquisa">
+    <button class="btn p-2 btn-lg btn-info" type="button" id="btnPesquisa">Pesquisar</button>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Card de identificação -->
+      <div class="col">
+        <div class="row card-1">
+          <div class="col">
+            <img src="assets/img/foto-cliente.jpeg" class="imagem" />
+          </div>
+          <div class="col">
+            <span class="row label">nome: Celso Portioli</span>
+            <span class="row label">cpf: 699.666.892-22</span>
+            <span class="row label">email: DarkMasterGAMERXXT@yahoo.com</span>
+            <span class="row label">aniversario: 11/09/2001</span>
+            <span class="row label">status: TA DEVENDO</span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Card de saldo -->
+      <div class="col">
+        <div class="row card-1">
+          <div class="saldo">
+            <span class="texto-saldo">SALDO: -100000.00</span>
+          </div>
+          <div id="botoes"> <!-- a div 'botões' aparece inicialmente ao entrar na tela -->
+            <div class="container-button">
+              <button id="botao-adicionar" type="button" class="butao" onclick="adicionarSaldo()"> <!-- o botão adicionar esconde novamente a div 'botoes' e apresenta a div 'valor' -->
+                Adicionar Saldo
+              </button>
+            </div>
+            <div class="container-button"> 
+              <button id="botao-remover" type="button" class="butao" onclick="removerSaldo()"> <!-- o botão remover esconde novamente a div 'botoes' e apresenta a div 'valor' -->
+                Remover Saldo
+              </button>
+            </div>
+          </div>
+          <div id="valor" style="display: none;"> <!-- a div 'valor' fica escondida e só aparece quando clicado nos botões adicionar ou remover -->
+            <div class="mb-3" style="margin-top: 10px;">
+              <input id="inputNumber" type="number" class="form-control" min="0.00" max="10000.00" step="0.01" placeholder="Valor"> <!-- este é o campo para inerir o valor -->
+              <span>Lembre-se de conferir o valor recebido do cliente</span>
+            </div>
+            <div class="container-button">
+              <button type="button" class="butao" onclick="voltar()"> <!-- o botão 'ok' esconde novamente a div 'valor' e apresenta a div 'botoes' -->
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

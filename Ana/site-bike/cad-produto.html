@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>saldo do cliente</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"> <!-- Importação do css do bootstrap -->
+  <link rel="stylesheet" type="text/css" href="assets/css/cad-produto.css">
+  <!-- Importação do css personalizado 'cad-produto' -->
+</head>
+
+<body style="background-image: url('assets/img/bike.png') ;     background-size: cover;
+background-repeat: no-repeat;
+">
+
+
+
+
+  <header>
+    <!-- Abertura do header para inserir o navbar (menu) -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbarBike" id="navbarText">
+          <ul class="navbar-nav d-flex align-items-center me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="D:\ProjetosFaculdade\HTML-bicicletaria\produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="D:\ProjetosFaculdade\HTML-bicicletaria\Venda.html">Vender</a>
+            </li>
+  <li class="nav-item">
+    <a class="nav-link" href="D:\ProjetosFaculdade\HTML-bicicletaria\diagnostico.html">Tela Inicial</a>
+  </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="joao/super calendario power guido/Caslenndario.html">agenda</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" href="D:\ProjetosFaculdade\HTML-bicicletaria\index.html"><img class="logo"  src="assets/img/logo.jpeg" alt="Your Logo"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="D:\ProjetosFaculdade\HTML-bicicletaria\Funcionarios.html">historico</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="menuFornecedores" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Clientes
+              </a>
+              <div class="dropdown-menu" aria-labelledby="menuFornecedores">
+                  <a class="dropdown-item" href="D:\ProjetosFaculdade\HTML-bicicletaria\ClienteCadastro.html">Cadastrar Cliente</a>
+                  <a class="dropdown-item" href="D:\ProjetosFaculdade\HTML-bicicletaria\Ana\site-bike\Saldao.html" disabled>Consulta clientes</a>
+                  
+              </div>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="D:\ProjetosFaculdade\HTML-bicicletaria\aluguelBike.html">AlugarBike</a>
+            </li>  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="menuFornecedores" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Fornecedores
+              </a>
+              <div class="dropdown-menu" aria-labelledby="menuFornecedores">
+                  <a class="dropdown-item" href="D:\ProjetosFaculdade\HTML-bicicletaria\Cadastro.html">Cadastrar Fornecedor</a>
+                  <a class="dropdown-item" href="cad-produto.html" disabled>Cadastro Produto</a>
+                  <a class="dropdown-item" href="localizacao.html">verificar localização das bicicleta</a>
+              </div>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="row container-formulario" style="    background-color: #F4F4F7;">
+
+    <div class="mb-3">
+      <label for="nomeProdutoInput">Nome do Produto</label>
+      <input type="text" class="form-control" id="nomeProdutoInput" placeholder="Bicicleta Hergométrica">
+    </div>
+
+    <div class="mb-3">
+      <label for="quantidadeInput">Quantidade</label>
+      <input type="text" class="form-control" id="quantidadeInput" placeholder="Quantidade">
+    </div>
+
+    <div class="mb-3">
+      <label for="descricaoInput">Descrição do Produto</label>
+      <textarea class="form-control" id="descricaoInput" rows="5"
+        placeholder="Descrição do Produto"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="fornecedorInput">Fornecedor</label>
+      <input type="text" class="form-control" id="fornecedorInput" placeholder="Fornecedor">
+    </div>
+
+    <div class="mb-3">
+      <label for="corInput">Cor do Produto</label>
+      <input type="text" class="form-control" id="corInput" placeholder="Cor do Produto">
+    </div>
+
+    <div class="mb-3">
+      <label for="precoInput" class="form-label">Preço</label>
+      <input type="text" class="form-control" id="precoInput" placeholder="Preço">
+    </div>
+
+    <div class="mb-3">
+      <label for="formFile" class="form-label">Foto do Produto</label>
+      <input class="form-control" type="file" id="formFile">
+    </div>
+
+    <img src="..." class="d-block w-100" alt="...">
+
+    <div class="mb-3" style="text-align: center;">
+      <button type="button" class="btn btn-success">Confirmar Cadastro</button>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

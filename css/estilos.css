@@ -1,0 +1,50 @@
+.fundo {
+    background-image: url("img\bike.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+  .navbarBike{
+    margin-left: 25%;
+  }
+  #background-container {
+    background-size: cover;
+    background-position: top center;
+}
+.box-alu{
+  background-color: #A5C4C1;
+  padding: auto;
+  border-radius: 16px;
+  width: 500px;
+  margin-top: 5%;
+}
+.box-dig{
+  background-color: #F4F4F7;
+  margin-top: 1%;
+  width: 90%;
+  padding: 10px;
+  border-radius: 16px;
+  height: auto;
+}
+.botaoCadastro{
+    background: transparent;
+    color: #F4F4F7; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer; 
+}
+.box-login {
+    margin-top: 25%; 
+    padding: 10px;
+    border-radius: 16px;
+    background-color: #A5C4C1;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo {
+    width: 100px; /* Adjust the width as per your requirements */
+    height: auto; /* To maintain the aspect ratio */
+  }
+  

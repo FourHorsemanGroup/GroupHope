@@ -1,0 +1,74 @@
+.estiloNePai {
+    background-color: #BCD4BC;
+    font-family: emoji;
+    color: aliceblue;
+}
+
+.navbarBike{
+    margin-left: 25%;
+}
+
+.logo {
+    width: 100px;
+    /* Adjust the width as per your requirements */
+    height: auto;
+    /* To maintain the aspect ratio */
+}
+
+.card-1 {
+    margin-top: 10%;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: #A5C4C1;
+    width: 500px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagem {
+    width: 150px;
+    height: auto;
+    border-radius: 16px;
+    margin-top: 5px;
+}
+
+.label {
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.saldo {
+    font-size: 18pt;
+    font-weight: bold;
+    border-style: none;
+    background-color: white;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 10px;
+    height: 60px;
+}
+
+.butao {
+    background: #5DB9AB;
+    color: #F4F4F7;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 95%;
+}
+
+.texto-saldo {
+    margin-top: 10px !important;
+
+}
+
+.container-button {
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+}

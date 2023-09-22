@@ -1,0 +1,31 @@
+.logo {
+    width: 100px;
+    /* Adjust the width as per your requirements */
+    height: auto;
+    /* To maintain the aspect ratio */
+}
+
+.navbarBike{
+    margin-left: 25%;
+}
+
+.campo {
+    width: 100%;
+}
+
+.campo>span{
+    font-size: 12pt;
+    font-weight: bold;
+    color:#475c23
+}
+.container-formulario {
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: #A5C4C1;
+    width: 70%;
+    height: 100%x;
+    margin-left: auto;
+    margin-right: auto;
+}
+
