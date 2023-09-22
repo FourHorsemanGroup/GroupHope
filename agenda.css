@@ -1,0 +1,68 @@
+.logo {
+    width: 100px; /* Adjust the width as per your requirements */
+    height: auto; /* To maintain the aspect ratio */
+  }
+.navbarBike {
+    margin-left: 25%;
+  }
+  .fundobike{
+    background-image: url("css/img/bike.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 20%;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo para o formulário */
+form {
+    margin-left: 30%;
+    background-color: #F4F4F7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Define a largura máxima do formulário */
+    width: 100%; 
+    margin-bottom: 5%;
+}
+
+/* Estilo para os campos de entrada */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para o título */
+h1 {
+    text-align: center;
+}

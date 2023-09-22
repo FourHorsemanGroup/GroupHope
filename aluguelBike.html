@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body id="background-container" style="background-image: url('css/img/bike.png');">
+<header></header>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbarBike" id="navbarText">
+        <ul class="navbar-nav d-flex align-items-center me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Venda.html">Vender</a>
+          </li>
+<li class="nav-item">
+  <a class="nav-link" href="diagnostico.html">Tela Inicial</a>
+</li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="joao/super calendario power guido/Caslenndario.html">agenda</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="D:\ProjetosFaculdade\HTML-bicicletaria\index.html"><img class="logo"  src="css/img/Logo.png" alt="Your Logo"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Funcionarios.html">historico</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuFornecedores" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Clientes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="menuFornecedores">
+                <a class="dropdown-item" href="ClienteCadastro.html">Cadastrar Cliente</a>
+                <a class="dropdown-item" href="Ana/site-bike/Saldao.html" disabled>Consulta clientes</a>
+                
+            </div>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aluguelBike.html">AlugarBike</a>
+          </li>  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuFornecedores" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Fornecedores
+            </a>
+            <div class="dropdown-menu" aria-labelledby="menuFornecedores">
+                <a class="dropdown-item" href="Cadastro.html">Cadastrar Fornecedor</a>
+                <a class="dropdown-item" href="ana/site-bike/.html" disabled>Cadastro Produto</a>
+                <a class="dropdown-item" href="Ana/site-bike/localizacao.html">verificar localização das bicicleta</a>
+            </div>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<form>
+    <div>
+      <div class="container text-center box-alu">
+        <div class="col-auto">
+            <label for="nome" class="sr-only">Nome:</label>
+            <input type="text" id="nome" name="nome" class="form-control mb-2" required placeholder="Nome">
+        </div>
+        <div class="col-auto">
+            <label for="email" class="sr-only">Email:</label>
+            <input type="email" id="email" name="email" class="form-control mb-2" required placeholder="Email">
+        </div>
+        <div class="col-auto">
+            <label for="bicicleta" class="sr-only">Escolha a Bicicleta:</label>
+            <select id="bicicleta" name="bicicleta" class="form-control mb-2" required>
+                <option value="modelo1">Modelo 1</option>
+                <option value="modelo2">Modelo 2</option>
+                <option value="modelo3">Modelo 3</option>
+            </select>
+        </div>
+        <div class="col-auto">
+            <label for="data" class="sr-only">Data de Retirada:</label>
+            <input type="date" id="data" name="data" class="form-control mb-2" required>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-2">Reservar</button>
+        </div>
+    </div>
+</form>
+</div>
+
+</body>
+</html>

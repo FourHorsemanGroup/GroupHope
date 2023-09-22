@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css\bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="agenda.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerBike</title>
+</head>
+<body class="fundobike">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbarBike" id="navbarText">
+        <ul class="navbar-nav d-flex align-items-center me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Venda.html">Vender</a>
+          </li>
+<li class="nav-item">
+  <a class="nav-link" href="diagnostico.html">Tela Inicial</a>
+</li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="joao/super calendario power guido/Caslenndario.html">agenda</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="D:\ProjetosFaculdade\HTML-bicicletaria\index.html"><img class="logo"  src="css/img/Logo.png" alt="Your Logo"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Funcionarios.html">historico</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuFornecedores" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Clientes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="menuFornecedores">
+                <a class="dropdown-item" href="ClienteCadastro.html">Cadastrar Cliente</a>
+                <a class="dropdown-item" href="Ana/site-bike/Saldao.html" disabled>Consulta clientes</a>
+                
+            </div>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aluguelBike.html">AlugarBike</a>
+          </li>  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuFornecedores" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Fornecedores
+            </a>
+            <div class="dropdown-menu" aria-labelledby="menuFornecedores">
+                <a class="dropdown-item" href="Cadastro.html">Cadastrar Fornecedor</a>
+                <a class="dropdown-item" href="ana/site-bike/.html" disabled>Cadastro Produto</a>
+                <a class="dropdown-item" href="Ana/site-bike/localizacao.html">verificar localização das bicicleta</a>
+            </div>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <h1 style="color: #ffffff;">Cadastro de Cliente</h1>
+      <form action="processar_cadastro.php" method="post">
+        <!-- Informações Pessoais -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco"><br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone"><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="preferencias">Preferências e Notas:</label>
+        <textarea id="preferencias" name="preferencias" rows="4" cols="50"></textarea><br><br>
+        <label for="marketing">Desejo receber comunicações de marketing:</label>
+        <input type="checkbox" id="marketing" name="marketing" value="sim"><br><br>
+        <input type="submit" value="Cadastrar Cliente">
+    </form>
+</body>
+</html>
